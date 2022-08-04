@@ -1,0 +1,13 @@
+﻿Console.WriteLine("Hello, World!");
+Console.WriteLine("Введите Ваше имя:");
+String NameUser = Console.ReadLine();
+Console.WriteLine("Привет, ");
+Console.WriteLine(NameUser);
+Console.Write("Привет, ");
+Console.WriteLine(NameUser);
+Console.WriteLine("Введите еще Ваше имя:");
+String NameUser2 = Console.ReadLine();
+Console.Write("Привет, ");
+Console.WriteLine(NameUser2);
+Console.WriteLine("Привет, ");
+Console.Write(NameUser2);
