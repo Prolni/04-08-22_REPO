@@ -36,3 +36,5 @@ Console.SetCursorPosition(x, y);
 Console.WriteLine("*");
 count = count + 1;
 }
+Console.SetCursorPosition(18, 18);
+Console.WriteLine("Получаем треугольник Серпинского");
