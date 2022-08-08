@@ -1,14 +1,23 @@
-﻿int a1 = 21;
-int a2 = 30;
-int a3 = 2;
-int b1 = 5;
-int b2 = 71;
-int b3 = 8;
-int c1 = 20;
-int c2 = 17;
-int c3 = 45;
+﻿int Max(int arg1, int arg2, int arg3) //создаем метод поиска максимального max_max числа
+{
+    int result = arg1;
+    if(arg2 > result) result = arg2;
+    if(arg3 > result) result = arg3;
+    return result;
+}
+
+int a1 = 21; //задаем аргументы
+int b1 = 3000;
+int c1 = 2;
+int a2 = 5;
+int b2 = 71000;
+int c2 = 8;
+int a3 = 20;
+int b3 = 17;
+int c3 = 3000;
+
 int max = a1;
-if (b1 > max) max = b1;
+if (b1 > max) max = b1; // поиск числа max последовательно
 if (c1 > max) max = c1;
 
 if (a2 > max) max = a2;
@@ -20,3 +29,12 @@ if (b3 > max) max = b3;
 if (c3 > max) max = c3;
 
 Console.WriteLine(max);
+
+int max1 = Max(a1, b1, c1);
+int max2 = Max(a2, b2, c2);
+int max3 = Max(a3, b3, c3);
+int max_max = Max(max1, max2, max3);
+Console.WriteLine(max_max);
+
+int max_max_max = Max(Max(a1, b1, c1), Max(a2, b2, c2), Max(a3, b3, c3)); //добавляем функцию в функцию для вывода максим знач max_max_max
+Console.WriteLine(max_max_max);
