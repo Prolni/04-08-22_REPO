@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-void FillArray(int[] collection)
+void FillArray(int [] collection)
 {
     int lenght = collection.Length;
     int index  = 0;
@@ -29,7 +29,11 @@ int []array = new int[10];
 FillArray(array);
 PrintArray(array);
 
+Console.WriteLine();
 
+int[] theArray = { 1, 3, 5, 7, 9 };
+theArray[2] = 2;
+PrintArray(theArray);
 
 
 
