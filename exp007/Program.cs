@@ -5,9 +5,9 @@ Console.WriteLine("Задаем цикл поиска середины отре�
 int ax = 40;
 int ay = 1;
 int bx = 1;
-int by = 15;
+int by = 20;
 int cx = 80;
-int cy = 15;
+int cy = 20;
 Console.SetCursorPosition(ax, ay);
 Console.WriteLine("A");
 Console.SetCursorPosition(bx, by);
@@ -17,7 +17,7 @@ Console.WriteLine("C");
 int x = ax;
 int y = ay;
 int count = 0;
-while (count < 10000)
+while (count < 100000)
 {
     int rand = new Random().Next(0, 3); // из интервала 0,1,2
     if (rand == 0)
@@ -32,9 +32,9 @@ while (count < 10000)
     {x = (x + cx)/2;
      y = (y + cy)/2;        
     }
-Console.SetCursorPosition(x, y);
+Console.SetCursorPosition(x+1, y+1); // добавили смещение +1 чтобы не стирал вршины АВС
 Console.WriteLine("*");
 count = count + 1;
 }
-Console.SetCursorPosition(18, 18);
+Console.SetCursorPosition(22, 22);
 Console.WriteLine("Получаем треугольник Серпинского");
