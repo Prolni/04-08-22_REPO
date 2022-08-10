@@ -3,6 +3,7 @@
 //4 -> да
 //-3 -> нет
 //7 -> нет
+
 Console.Clear();
 
 Console.WriteLine("Введите число: ");
