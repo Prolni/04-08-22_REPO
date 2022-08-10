@@ -8,7 +8,7 @@ Console.Clear();
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 if (num < 100) 
-Console.WriteLine($"В введенном числе: {num} третья цифра отсутствует или число отрицательное, введите новое число");
+Console.WriteLine($"В введенном числе: {num} третья цифра отсутствует или введенное число отрицательное, введите новое число");
 else
     {
     int element = num % 10; 
