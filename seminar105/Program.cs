@@ -14,7 +14,8 @@ else
     long element = num % 10; 
     while (num > 999)
         { 
-        num = (num - element) / 10; element = num % 10; 
+        num = (num - element) / 10; 
+        element = num % 10; 
         }
     Console.WriteLine($"В введенном числе третья цифра: {element}");
     }
