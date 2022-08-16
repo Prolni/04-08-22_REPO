@@ -6,6 +6,7 @@
 12821 -> да
 23432 -> да
 */
+Console.Clear();
 
 Console.Write("Введите 5-значное число для проверки палиндрома: ");
 int number = Convert.ToInt32(Console.ReadLine());
