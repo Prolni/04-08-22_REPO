@@ -4,3 +4,8 @@
 1, -7, 567, 89, 223-> 3 */
 using static System.Console;
 Clear();
+
+Write("Введите числа через запятую: ");
+int[] matrix = Array.ConvertAll(ReadLine()!.Split(","), int.Parse);
+int itog = matrix.Count(x => x > 0);
+WriteLine($"Кол-во введеных чисел, которые больше 0: {itog}");
