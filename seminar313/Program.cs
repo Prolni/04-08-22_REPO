@@ -6,6 +6,7 @@ using static System.Console;
 Clear();
 
 int[] array = new int[8];
+Insert_Print_Array(array);
 void Insert_Print_Array(int[] array)
 {
 int length = array.Length;
@@ -21,7 +22,7 @@ while (index < length)
  index++;
 }
 }
-Insert_Print_Array(array);
+//Insert_Print_Array(array);
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 
@@ -77,11 +78,11 @@ void PrintArray(int[] AnyArray)
 }
 
 //int[] array = new int[8];
-FillArray(array);
+//FillArray(array);
+//PrintArray(array);
+//WriteLine();
+//SortArrayMinToMax(array);
 //PrintArray(array);
 WriteLine();
-SortArrayMinToMax(array);
-//PrintArray(array);
-WriteLine();
-SortArrayMaxToMin(array);
+//SortArrayMaxToMin(array);
 //PrintArray(array);
